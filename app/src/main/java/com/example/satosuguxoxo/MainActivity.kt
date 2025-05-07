@@ -153,7 +153,7 @@ class MainActivity : AppCompatActivity() {
             loser = "Suguru"
         }
         AlertDialog.Builder(this)
-            .setTitle("$winner pegs $loser")
+            .setTitle("$winner wins")
             .setMessage("\nSatoru: $score_Satoru\n\nSuguru: $score_Suguru")
             .setPositiveButton("New Game!"){
                 _,_ ->
@@ -164,7 +164,7 @@ class MainActivity : AppCompatActivity() {
     }
     private fun finishGameDraw(){
         AlertDialog.Builder(this)
-            .setTitle("Draw! Nobody gets pegged!!!:D\n but noone gets to peg :(")
+            .setTitle("Draw! Nobody lost!!!:D\n but noone wins :(")
             .setMessage("\nSatoru: $score_Satoru\n\nSuguru: $score_Suguru")
             .setPositiveButton("New Game!"){
                 _,_ ->
